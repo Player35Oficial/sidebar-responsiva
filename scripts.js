@@ -1,5 +1,5 @@
 const aside = document.querySelector("aside")
-const p = document.querySelectorAll("p")
+const p = document.querySelectorAll(".menu-p")
 const logo = document.querySelector(".logo")
 
 const ocultarParagrafos = (opacity) => {
