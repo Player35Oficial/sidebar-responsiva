@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+body {
+    display: flex;
+}
+main {
+    background-color: var(--light-grey);
+    height: 100vh;
+    width: 100%;
+    padding: 18px;
+}
+
+p {
+    transition: all 0.3s ease;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green);
+    width: 78px;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+aside.active {
+    width: 250px;
+}
+
+/* ASIDE - HEADER */
+.aside-header {
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    align-items: center;
+    margin: 0 14px 0 28px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 24px;
+    width: auto;
+}
+.menu-bar {
+    width: 28px;
+    border: 2px solid var(--text-color);
+    border-radius: 2px;
+}
+
+/* ASIDE - SEARCH */
+.aside-search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 14px 20px 14px;
+}
+
+#search {
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    border-style: none;
+    background-color: var(--light-green);
+}
+
+.search-label {
+    color: var(--text-color);
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 14px;
+}
+
+/* ASIDE/MENU - OPTIONS */
+.menu-options {
+    display: flex;
+    margin: 0 14px 0 28px;
+}
+
+.list-options {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.list-options li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    gap: 13px;
+    font-weight: 400;
+}
+
+/* ASIDE - FOOTER */
+.aside-footer {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-green);
+}
+.user-container {
+    margin: 0 0 0 14px;
+    display: flex;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+figure {height: 45px;}
+.avatar {
+    line-height: 0;
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.user-name {font-size: 15px;}
+.user-ocupation {font-size: 12px;}
+#log-out {margin-right: 14px; line-height: 0;}
