@@ -49,12 +49,23 @@ aside.active {
     align-items: center;
     margin: 0 14px 0 28px;
 }
+
+.logo {
+    display: none;
+    opacity: 0;
+}
+.logo.active {
+    display: flex;
+    opacity: 100;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
     gap: 6px;
     height: 24px;
     width: auto;
+    cursor: pointer;
 }
 .menu-bar {
     width: 28px;
@@ -110,12 +121,21 @@ aside.active {
 /* ASIDE - FOOTER */
 .aside-footer {
     height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside-footer.active {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-green);
 }
 .user-container {
+    display:none;
+}
+.user-container.active {
     margin: 0 0 0 14px;
     display: flex;
     gap: 10px;
@@ -132,4 +152,15 @@ figure {height: 45px;}
 }
 .user-name {font-size: 15px;}
 .user-ocupation {font-size: 12px;}
-#log-out {margin-right: 14px; line-height: 0;}
+
+#log-out {
+    margin:0;
+}
+
+#log-out.active {
+    margin-right: 14px; 
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

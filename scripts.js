@@ -1,6 +1,10 @@
 const aside = document.querySelector("aside")
+const menu = document.querySelector(".menu")
 const p = document.querySelectorAll(".menu-p")
 const logo = document.querySelector(".logo")
+const asideFooter = document.querySelector(".aside-footer")
+const userContainer = document.querySelector(".user-container")
+const exit = document.querySelector("#log-out")
 
 const ocultarParagrafos = (opacity) => {
     p.forEach((p => {
@@ -9,8 +13,13 @@ const ocultarParagrafos = (opacity) => {
 }
 
 
-aside.onclick = () => {
+menu.onclick = () => {
     aside.classList.toggle("active")
+    asideFooter.classList.toggle("active")
+    menu.classList.toggle("active")
+    logo.classList.toggle("active")
+    exit.classList.toggle("active")
+    userContainer.classList.toggle("active")
     if (aside.classList.contains("active") == true) {
         ocultarParagrafos(100)
     } else {
