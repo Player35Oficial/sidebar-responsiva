@@ -78,7 +78,7 @@ aside.active {
     display: flex;
     position: relative;
     align-items: center;
-    margin: 0 14px 20px 14px;
+    margin: 0 14px 15px 14px;
 }
 
 #search {
@@ -101,21 +101,26 @@ aside.active {
 /* ASIDE/MENU - OPTIONS */
 .menu-options {
     display: flex;
-    margin: 0 14px 0 28px;
+    margin: 0 14px 0 14px;
 }
 
 .list-options {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    width: 100%
+    /* gap: 34px; */
 }
 .list-options li a {
     text-decoration: none;
     color: var(--text-color);
     display: flex;
+    align-items: center;
+    width: 100%;
     gap: 13px;
+    height: 50px;
     font-weight: 400;
+    padding-left: 14px;
 }
 
 /* ASIDE - FOOTER */
