@@ -87,6 +87,7 @@ aside.active {
     border-radius: 12px;
     border-style: none;
     background-color: var(--light-green);
+    padding-left: 50px;
 }
 
 .search-label {
